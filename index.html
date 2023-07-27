@@ -331,7 +331,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
         </div>
-        <p class="text-lg text-[#F85559]">Details</p>
+        <button class="text-lg text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
         </div>
  <!-- fruit 1 ends -->
 
@@ -340,19 +340,96 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <!-- ========================testing modal========================== -->
 
 <!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<button class="btn hidden" onclick="my_modal_1.showModal()"></button>
 <dialog id="my_modal_1" class="modal">
-  <form method="dialog" class="modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action"> -->
+  <form method="dialog" class=" w-fit h-[70vh] p-2 bg-white mt-2 flex flex-col justify-center items-center rounded-lg max-md:h-[80vh]">
+    <img src="./images/fruit6.png" alt="" width="80px">
+    <h3 class="font-bold text-lg">Apples</h3>
+    <p class="py-4 text-center">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
+    <div class="modal-action">
       <!-- if there is a button in form, it will close the modal -->
-      <!-- <button class="btn">Close</button>
+      <button class="bg-transparent hover:bg-rose-600 text-rose-600 font-semibold hover:text-white py-2 px-4 border border-rose-600 hover:border-transparent rounded">Close</button>
+      <button type="submit" class="btn capitalize text-white bg-[#F85559] hover:bg-rose-600 border-0"> Buy Now</button>
     </div>
   </form>
-</dialog> -->
+</dialog>
 
+<!--    modal 2 -->
 
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="my_modal_2.showModal()"></button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class=" w-fit h-[70vh] p-2 bg-white mt-2 flex flex-col justify-center items-center rounded-lg max-md:h-[80vh]">
+    <img src="./images/fruit7.png" alt="" width="80px">
+    <h3 class="font-bold text-lg">Oranges</h3>
+    <p class="py-4 text-center">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="bg-transparent hover:bg-rose-600 text-rose-600 font-semibold hover:text-white py-2 px-4 border border-rose-600 hover:border-transparent rounded">Close</button>
+      <button type="submit" class="btn capitalize text-white bg-[#F85559] hover:bg-rose-600 border-0"> Buy Now</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- ======= modal 3 -->
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="my_modal_3.showModal()"></button>
+<dialog id="my_modal_3" class="modal">
+  <form method="dialog" class=" w-fit h-[70vh] p-2 bg-white mt-2 flex flex-col justify-center items-center rounded-lg max-md:h-[80vh]">
+    <img src="./images/fruit8.png" alt="" width="80px">
+    <h3 class="font-bold text-lg">Red Dragon</h3>
+    <p class="py-4 text-center">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="bg-transparent hover:bg-rose-600 text-rose-600 font-semibold hover:text-white py-2 px-4 border border-rose-600 hover:border-transparent rounded">Close</button>
+      <button type="submit" class="btn capitalize text-white bg-[#F85559] hover:bg-rose-600 border-0"> Buy Now</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- modal 4 -->
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="my_modal_4.showModal()"></button>
+<dialog id="my_modal_4" class="modal">
+  <form method="dialog" class=" w-fit h-[70vh] p-2 bg-white mt-2 flex flex-col justify-center items-center rounded-lg max-md:h-[80vh]">
+    <img src="./images/fruit9.png" alt="" width="80px">
+    <h3 class="font-bold text-lg">Bananas</h3>
+    <p class="py-4 text-center">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="bg-transparent hover:bg-rose-600 text-rose-600 font-semibold hover:text-white py-2 px-4 border border-rose-600 hover:border-transparent rounded">Close</button>
+      <button type="submit" class="btn capitalize text-white bg-[#F85559] hover:bg-rose-600 border-0"> Buy Now</button>
+    </div>
+  </form>
+</dialog>
 
 
 
@@ -381,7 +458,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
   </div>
-  <p class="text-lg text-[#F85559]">Details</p>
+  <button class="text-lg text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
   </div>
 <!-- fruit 2 ends -->
 <!-- fruit card 3 start-->
@@ -397,7 +474,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
   </div>
-  <p class="text-lg text-[#F85559]">Details</p>
+  <button class="text-lg text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
   </div>
 <!-- fruit 3 ends -->
 <!-- fruit card 4 start-->
@@ -413,7 +490,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
   </div>
-  <p class="text-lg text-[#F85559]">Details</p>
+  <button class="text-lg text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
   </div>
 </div>
 <!-- fruit 4 ends -->
