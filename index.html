@@ -9,6 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+</style>
 
 </head>
 <body>
@@ -285,25 +288,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl">
-        <span style="--value:15;"></span>
+        <p id="days">00</p>
       </span>
       days
     </div> 
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl">
-        <span style="--value:10;"></span>
+        <p id="hours">00</p>
       </span>
       hours
     </div> 
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl">
-        <span style="--value:24;"></span>
+        <p id="minutes">00</p>
       </span>
       min
     </div> 
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl">
-        <span style="--value:28;"></span>
+        <p id="seconds">00</p>
       </span>
       sec
     </div>
@@ -314,6 +317,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   </div>
 
 <!-- timer count down -->
+
+<script>
+var countdownDate = new Date("Oct 15, 2023 00:00:00").getTime();
+var x = setInterval(function(){
+ var Now = new Date().getTime();
+
+var distance = countdownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+ document.getElementById("days").innerHTML = days;
+ document.getElementById("hours").innerHTML = hours;
+ document.getElementById("minutes").innerHTML = minutes;
+ document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+
+</script>
+
+
+
+
+
+
+
+
 
 <!-- =======================================deal of the day end here----======================= -->
 
